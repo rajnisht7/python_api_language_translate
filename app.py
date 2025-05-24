@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "this is home page"
+    return "this is home page\n You can translate using https://language-translate-7evj.onrender.com/translatelanguage?text=hello&target=hi"
 
 @app.route("/translatelanguage")
 def translate_language():
