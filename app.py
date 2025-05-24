@@ -3,6 +3,9 @@ from googletrans import Translator
 
 app = Flask(__name__)
 
+@app.route("/"):
+    return "visit url"
+
 @app.route("/translatelanguage")
 def translate_language():
     text = request.args.get("text")
